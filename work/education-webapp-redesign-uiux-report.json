@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-09-14T22:25:30+00:00",
+  "skillName": "ui-ux-pro-max",
+  "skillFile": "/Users/kimhongnyeon/.agents/skills/ui-ux-pro-max/SKILL.md",
+  "searchScript": "/Users/kimhongnyeon/.agents/skills/ui-ux-pro-max/scripts/search.py",
+  "executionMode": "runtime-cli",
+  "runtimeStatus": "available",
+  "projectRoot": "/Volumes/ External Drive 256G/Dev2/codex/island-energy-lab",
+  "outputDir": "/Volumes/ External Drive 256G/Dev2/codex/island-energy-lab",
+  "query": "education energy island simulation secondary school light sky blue contextual illustration",
+  "projectName": "Island Energy Lab",
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/kimhongnyeon/.agents/skills/ui-ux-pro-max/scripts/search.py",
+    "education energy island simulation secondary school light sky blue contextual illustration",
+    "--design-system",
+    "--persist",
+    "--json",
+    "--project-name",
+    "Island Energy Lab",
+    "--output-dir",
+    "/Volumes/ External Drive 256G/Dev2/codex/island-energy-lab"
+  ],
+  "exitCode": 0,
+  "status": "success",
+  "persistence": {
+    "status": "success",
+    "design_system_dir": "/Volumes/ External Drive 256G/Dev2/codex/island-energy-lab/design-system/island-energy-lab",
+    "master_file": "/Volumes/ External Drive 256G/Dev2/codex/island-energy-lab/design-system/island-energy-lab/MASTER.md",
+    "created_files": [
+      "/Volumes/ External Drive 256G/Dev2/codex/island-energy-lab/design-system/island-energy-lab/MASTER.md"
+    ]
+  },
+  "masterFile": "/Volumes/ External Drive 256G/Dev2/codex/island-energy-lab/design-system/island-energy-lab/MASTER.md",
+  "masterExists": true,
+  "stackSearch": {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/kimhongnyeon/.agents/skills/ui-ux-pro-max/scripts/search.py",
+      "education energy island simulation secondary school light sky blue contextual illustration",
+      "--stack",
+      "react",
+      "--json"
+    ],
+    "exitCode": 0,
+    "result": {
+      "domain": "stack",
+      "stack": "react",
+      "query": "education energy island simulation secondary school light sky blue contextual illustration",
+      "file": "stacks/react.csv",
+      "count": 0,
+      "results": [],
+      "suggestions": [
+        "context",
+        "contexts",
+        "every"
+      ]
+    }
+  }
+}
