@@ -1,0 +1,13 @@
+# deps & build
+node_modules/
+dist/
+
+# logs & OS
+*.log
+.DS_Store
+Thumbs.db
+
+# editor & local env
+.vscode/
+.idea/
+*.local

@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", "Noto Sans KR", ui-sans-serif, system-ui, sans-serif;
+  --color-island-50: #f0f9ff;
+  --color-island-100: #e0f2fe;
+  --color-island-600: #0284c7;
+  --color-island-700: #0369a1;
+  --color-island-900: #0c4a6e;
+  --color-sun-500: #f59e0b;
+  --color-leaf-600: #15803d;
+  --color-danger-600: #dc2626;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Focus: always visible, high contrast */
+:where(a, button, input, select, [tabindex]):focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* gi-pulse: ONLY the current step's primary button uses this class.
+   Spec 00 §5: exactly one emphasized action. */
+.gi-pulse {
+  position: relative;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.35);
+  animation: gi-pulse-ring 2.2s ease-out infinite;
+}
+
+@keyframes gi-pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0.45); }
+  70% { box-shadow: 0 0 0 10px rgba(2, 132, 199, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0); }
+}
+
+/* Reduced motion: static emphasis instead of animation (00 §5) */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .gi-pulse {
+    animation: none;
+    box-shadow: none;
+    outline: 3px solid #0369a1;
+    outline-offset: 2px;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Pattern helpers — never color-only (00 §5) */
+.pattern-charge {
+  background-image: repeating-linear-gradient(45deg, rgba(21,128,61,.18) 0 6px, transparent 6px 12px);
+}
+.pattern-discharge {
+  background-image: repeating-linear-gradient(-45deg, rgba(2,132,199,.18) 0 6px, transparent 6px 12px);
+}
+.pattern-outage {
+  background-image: repeating-linear-gradient(90deg, rgba(220,38,38,.22) 0 4px, transparent 4px 8px);
+}
+
+/* Thin scrollbars for wide tables on 360px screens */
+.thin-scroll {
+  scrollbar-width: thin;
+  overflow-x: auto;
+}
+
+::selection {
+  background: #bae6fd;
+}
