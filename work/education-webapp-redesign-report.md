@@ -14,6 +14,15 @@
 - ui-ux-pro-max runtime-cli success. 검색 원자료 중 앱에 맞는 기준만 design-system/MASTER.md에 명시. 기존 전체 UI를 재설계하지 않음.
 
 ## 확인 링크
-[로컬 앱](http://127.0.0.1:5173) — Vite 개발 서버 유지. 이번 작업에서 커밋·푸시·배포·HVC 등록은 수행하지 않았다.
+[로컬 앱](http://127.0.0.1:5173) — Vite 개발 서버 유지.
+
+## 릴리스 확인
+
+- 커밋: `6d557a5c5cff106357b922deabf428a8c88ad0b0` (`main`)
+- 원격 푸시: `origin/main` 반영 완료
+- GitHub Actions: [Pages 배포 실행 34905615960](https://github.com/WBmaker2/island-energy-lab/actions/runs/34905615960) — build/deploy 성공
+- 공개 페이지: [island-energy-lab](https://wbmaker2.github.io/island-energy-lab/)
+- 공개 자산: 낮·밤 WebP 모두 `200 image/webp` 응답 확인
+- HVC 등록은 이번 작업 범위에 포함하지 않았다.
 
 프롬프트 전문·파일별 경로·롤백은 education-webapp-redesign-assets.md 참조. built-in image_gen 사용, 세부 생성 모델명은 도구에서 확인하지 못함.
